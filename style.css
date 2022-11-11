@@ -1,0 +1,353 @@
+@import url('https://fonts.googleapis.com/css2?family=Gemunu+Libre&display=swap');
+*{
+    box-sizing: border-box;
+    padding: 0%;
+    margin: 0%;
+    font-family: 'Gemunu Libre', sans-serif;
+    scroll-behavior: smooth;
+    text-decoration: none;
+    list-style: none;
+}
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 9rem;
+}
+html::-webkit-scrollbar{
+    width: .8rem;
+}
+html::-webkit-scrollbar-track{
+    background: rgb(0,255,0);
+}
+
+html::-webkit-scrollbar-thumb{
+    background: #000;
+    width: .5rem;
+}
+.flex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+}
+/* navigation */
+.navigation{
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100000;
+}
+
+nav ul{
+    list-style:none;
+    position: absolute;
+    top: 0px;
+    right: -10px;
+    flex-direction: column;
+} 
+nav ul li{
+    background-color: rgb(0, 255, 0);
+    padding: 0.75em 3em 0.75em 4em;
+    border-radius: 10px;
+    margin: 3px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-weight: bolder;
+}
+.icon{
+    position: relative;
+    transition: right 1.5s;
+    right:-90px;
+    justify-content: space-around;
+}
+
+.icon:hover{
+    right:0px;
+}
+
+.fav{
+    position: absolute;
+    left: 10px;
+    font-size: 20px;
+}
+.container{
+    width: 100%;
+    height: 100%;
+}
+
+/* home */
+
+.home{
+    background-color: black;
+}
+
+.heading{
+    font-size: 6rem;
+    font-weight: normal;
+    color: rgb(0, 255, 0);
+    position: absolute;
+    top:20%;
+    left:10%;
+    letter-spacing: 5px;
+}
+.info{
+    color: white;
+    font-size: 3rem;
+    font-weight: lighter;
+    position: absolute;
+    top:35%;
+    left:13%;
+    letter-spacing: 7px;
+    line-height: 30px;
+    right:20%;
+
+}
+.fa-angle-down{
+    font-size: 40px;
+    color: white;
+    position: absolute;
+    bottom: 10%;
+    left:50%;
+    transform: translate(-50%);
+    animation: hop 2s infinite;
+}
+
+@keyframes hop{
+    0%,50%,100%{
+        bottom:11%;
+    }
+    25%{
+        bottom:8%;
+    }
+    75%{
+        bottom: 7%;
+    }
+}
+
+.about{
+    background-color: rgb(56, 56, 56);
+}
+
+.abouthead{
+    font-size: 4rem;
+    width: 50px;
+    color: rgb(255, 255, 255);
+    position: relative;
+    top:15%;
+    left:10%;
+    letter-spacing: 5px;
+    font-weight: lighter;
+}
+
+.known{
+    flex-direction: row;
+    width: 70%;
+    height: 100px;
+    position: relative;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.about ul li{
+    margin: 15px;
+}
+.ico{
+    font-size: 6rem;
+}
+
+
+/* icons */
+
+.fa-css3-alt{
+    color: rgb(70, 70, 255);
+}
+.fa-html5{
+    color: orange;
+}
+.fa-square-js{
+    color: yellow;
+}
+.fa-sass{
+    color: rgb(175, 70, 189);
+}
+.fa-bootstrap{
+    color: rgb(98, 64, 190);
+}
+.fa-c{
+    color: rgb(57, 55, 177);
+}
+.fa-java{
+    color: rgb(211, 69, 13);
+}
+.fa-linux{
+    color: rgb(255, 255, 255);
+}
+.fa-react{
+    color: rgb(88, 104, 248);
+}
+
+.knowninfo{
+    width: 70%;
+    color: white;
+    font-size: 3rem;
+    position: relative;
+    left: 15%;
+    top:30%;
+}
+
+.contact{
+    background-color: rgb(180, 180, 180);
+    overflow-x: hidden;
+}
+
+.conheading{
+    font-size: 4rem;
+    width: 50px;
+    color: rgb(0, 0, 0);
+    position: relative;
+    top:15%;
+    left:10%;
+    letter-spacing: 5px;
+    font-weight: lighter;
+}
+
+.contacticons{
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 50%;
+    font-size: 3rem;
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+}
+.emailbox{
+    width: 50%;
+    height: 200px;
+    position: relative;
+    left:50%;
+    top:30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.inputbox{
+    width: 80%;
+    height: 100px;
+    font-size: 2rem;
+    border-radius: 20px;
+    box-shadow: 10px 5px black;
+    text-align: center;
+}
+.boxheading{
+    width: 10px;
+}
+
+img{
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    position: relative;
+    left: 20%;
+    top:-10%;
+}
+
+
+
+@media (max-width:1000px){
+    .emailbox{
+        width: 100%;
+        height: 200px;
+        position: relative;
+        left:10%;
+        top:25%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+}
+
+
+
+
+
+@media (max-width:680px){
+    .known{
+        flex-direction: column;
+        top: 55%;
+        left:10%
+    }
+    .ico{
+        font-size: 4rem;
+    }
+    .about ul li{
+        margin: 10px;
+    }
+    .knowninfo{
+        width: 70%;
+        font-size: 2.5rem;
+        left: 25%;
+        top:12%;
+        line-height: 4rem;
+    }
+    .profile{
+        height: 200px;
+        width: 200px;
+        position: absolute;
+        top:500px;
+    }
+}
+@media (max-width:380px){
+    .heading,.abouthead,.conheading{
+        font-size: 4rem;
+    }
+    .info{
+        font-size: 1.5rem;
+    }
+    .known{
+        flex-direction: column;
+        top: 50%;
+        left:10%
+    }
+    .ico{
+        font-size: 3rem;
+    }
+    .about ul li{
+        margin: 10px;
+    }
+    .knowninfo{
+        width: 70%;
+        font-size: 2rem;
+        left: 25%;
+        top:8%;
+        line-height: 3rem;
+    }
+    .emailbox{
+        width: 100%;
+        height: 200px;
+        position: relative;
+        left:10%;
+        top:25%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+}
+@media (max-width:290px){
+    .knowninfo{
+        width: 70%;
+        font-size: 2rem;
+        left: 25%;
+        top:0%;
+        line-height: 3rem;
+    }
+    
+}
